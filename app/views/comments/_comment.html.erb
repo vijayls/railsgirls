@@ -1,0 +1,16 @@
+<ul class="comments">
+<li>
+  <strong>Commenter:</strong>
+  <strong><%= comment.commenter %> </strong>
+</li>
+
+<li>
+  Comment:
+  <%= comment.body %>
+</li>
+<li>
+  <%= link_to 'Destroy Comment', [comment.post, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</li>
+</ul>
